@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-
-namespace Acr.UserDialogs
+namespace Acr.UserDialogs.Extended
 {
 
     public class ActionSheetConfig : IAndroidStyleDialogConfig

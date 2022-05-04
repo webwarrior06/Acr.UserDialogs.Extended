@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Text;
 using Xamarin.Forms;
 
-namespace Acr.UserDialogs
+namespace Acr.UserDialogs.Extended
 {
 	class ProgressDialog : IProgressDialog
 	{

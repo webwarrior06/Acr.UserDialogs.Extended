@@ -4,9 +4,9 @@ using Xamarin.Forms.Platform.Tizen;
 using TForms = Xamarin.Forms.Platform.Tizen.Forms;
 using EPopup = ElmSharp.Popup;
 
-[assembly: Dependency(typeof(Acr.UserDialogs.DialogImplementation))]
+[assembly: Dependency(typeof(Acr.UserDialogs.Extended.DialogImplementation))]
 
-namespace Acr.UserDialogs
+namespace Acr.UserDialogs.Extended
 {
 	class DialogImplementation : IDialog, IDisposable
 	{

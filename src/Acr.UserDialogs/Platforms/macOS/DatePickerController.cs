@@ -1,9 +1,9 @@
 ﻿using System;
-using Acr.UserDialogs;
+using Acr.UserDialogs.Extended;
 using AppKit;
 using Foundation;
 
-namespace Acr.UserDialogs
+namespace Acr.UserDialogs.Extended
 {
     public class DatePickerController : NSViewController
     {

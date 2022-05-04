@@ -1,9 +1,9 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Android.OS;
 
 
-namespace Acr.UserDialogs.Fragments
+namespace Acr.UserDialogs.Extended.Fragments
 {
     public class ConfigStore
     {

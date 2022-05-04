@@ -1,4 +1,4 @@
-﻿namespace Acr.UserDialogs
+﻿namespace Acr.UserDialogs.Extended
 {
 	/// <summary>
 	/// The Toast class provides properties that show simple types of messages.

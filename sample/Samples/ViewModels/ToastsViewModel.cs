@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Input;
-using Acr.UserDialogs;
+using Acr.UserDialogs.Extended;
+using Acr.UserDialogs.Extended;
 using Xamarin.Forms;
 
 

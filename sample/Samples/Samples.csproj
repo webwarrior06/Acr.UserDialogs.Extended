@@ -9,7 +9,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\src\Acr.UserDialogs\Acr.UserDialogs.csproj" />
+      <ProjectReference Include="..\..\src\Acr.UserDialogs\Acr.UserDialogs.Extended.csproj" />
     </ItemGroup>
 
 </Project>

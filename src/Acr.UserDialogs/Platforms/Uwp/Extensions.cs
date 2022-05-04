@@ -2,7 +2,7 @@
 using Windows.UI;
 
 
-namespace Acr.UserDialogs
+namespace Acr.UserDialogs.Extended
 {
     public static class Extensions
     {

@@ -1,10 +1,10 @@
-using System;
+﻿using System;
 using Android.App;
 using Android.Content;
 using Android.Text;
 
 
-namespace Acr.UserDialogs.Builders
+namespace Acr.UserDialogs.Extended.Builders
 {
     public static class DatePromptBuilder
     {

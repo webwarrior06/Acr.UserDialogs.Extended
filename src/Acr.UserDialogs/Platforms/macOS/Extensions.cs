@@ -1,8 +1,8 @@
-using System;
+﻿using System;
 using AppKit;
 using Foundation;
 
-namespace Acr.UserDialogs
+namespace Acr.UserDialogs.Extended
 {
     public static class Extensions
     {

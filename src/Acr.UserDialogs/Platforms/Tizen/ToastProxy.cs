@@ -1,7 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 
-namespace Acr.UserDialogs
+namespace Acr.UserDialogs.Extended
 {
 	/// <summary>
 	/// This class is for the internal use by toast.

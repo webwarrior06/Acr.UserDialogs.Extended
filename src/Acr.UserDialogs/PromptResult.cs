@@ -1,6 +1,4 @@
-using System;
-
-namespace Acr.UserDialogs
+﻿namespace Acr.UserDialogs.Extended
 {
 
     public class PromptResult : AbstractStandardDialogResult<string>

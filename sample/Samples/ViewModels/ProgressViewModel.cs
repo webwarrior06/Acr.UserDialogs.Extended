@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using Acr.UserDialogs;
+using Acr.UserDialogs.Extended;
 using Xamarin.Forms;
 
 

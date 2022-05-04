@@ -1,8 +1,9 @@
 ﻿using System;
+using Acr.UserDialogs.Extended;
 using UIKit;
 
 
-namespace Acr.UserDialogs
+namespace Acr.UserDialogs.Extended
 {
     public static partial class UserDialogs
     {

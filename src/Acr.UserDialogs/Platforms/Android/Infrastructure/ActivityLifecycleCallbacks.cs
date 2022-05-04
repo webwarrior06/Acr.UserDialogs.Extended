@@ -3,7 +3,7 @@ using Android.App;
 using Android.OS;
 
 
-namespace Acr.UserDialogs.Infrastructure
+namespace Acr.UserDialogs.Extended.Infrastructure
 {
     public class ActivityLifecycleCallbacks : Java.Lang.Object, Application.IActivityLifecycleCallbacks
     {

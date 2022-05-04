@@ -16,7 +16,7 @@ using AppCompatAlertDialog = Android.Support.V7.App.AlertDialog;
 #endif
 
 
-namespace Acr.UserDialogs.Builders
+namespace Acr.UserDialogs.Extended.Builders
 {
     public class PromptBuilder : IAlertDialogBuilder<PromptConfig>
     {

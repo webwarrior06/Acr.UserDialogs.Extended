@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Windows.UI.Xaml;
 
 
-namespace Acr.UserDialogs
+namespace Acr.UserDialogs.Extended
 {
 
     public class ActionSheetViewModel

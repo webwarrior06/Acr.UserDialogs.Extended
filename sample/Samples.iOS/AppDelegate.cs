@@ -1,5 +1,6 @@
 ﻿using System;
 using Foundation;
+using Samples.Pages;
 using UIKit;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;

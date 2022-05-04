@@ -3,9 +3,9 @@ using Xamarin.Forms;
 using EPopup = ElmSharp.Popup;
 using TForms = Xamarin.Forms.Platform.Tizen.Forms;
 
-[assembly: Dependency(typeof(Acr.UserDialogs.ToastImplementation))]
+[assembly: Dependency(typeof(Acr.UserDialogs.Extended.ToastImplementation))]
 
-namespace Acr.UserDialogs
+namespace Acr.UserDialogs.Extended
 {
 	internal class ToastImplementation : IToast, IDisposable
 	{

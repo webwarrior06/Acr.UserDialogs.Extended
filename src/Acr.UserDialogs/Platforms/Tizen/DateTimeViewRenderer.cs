@@ -4,9 +4,9 @@ using Xamarin.Forms.Platform.Tizen;
 using EDateTimeSelector = ElmSharp.DateTimeSelector;
 using TForms = Xamarin.Forms.Platform.Tizen.Forms;
 
-[assembly: ExportRenderer(typeof(Acr.UserDialogs.DateTimeView), typeof(Acr.UserDialogs.DateTimeViewRenderer))]
+[assembly: ExportRenderer(typeof(Acr.UserDialogs.Extended.DateTimeView), typeof(Acr.UserDialogs.Extended.DateTimeViewRenderer))]
 
-namespace Acr.UserDialogs
+namespace Acr.UserDialogs.Extended
 {
 	public class DateTimeViewRenderer : ViewRenderer<DateTimeView, EDateTimeSelector>
 	{

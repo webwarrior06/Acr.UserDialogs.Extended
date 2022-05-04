@@ -1,10 +1,10 @@
 ﻿using System;
 using Foundation;
 using UIKit;
-using Acr.UserDialogs.Infrastructure;
+using Acr.UserDialogs.Extended.Infrastructure;
 
 
-namespace Acr.UserDialogs
+namespace Acr.UserDialogs.Extended
 {
     public static class Extensions
     {

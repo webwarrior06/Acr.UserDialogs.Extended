@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Linq;
 using System.Text;
+using Acr.UserDialogs.Extended;
 using UIKit;
 using CoreGraphics;
 using Foundation;
 using TTG;
-using Acr.UserDialogs.Infrastructure;
+using Acr.UserDialogs.Extended.Infrastructure;
 
 
-namespace Acr.UserDialogs
+namespace Acr.UserDialogs.Extended
 {
     public class UserDialogsImpl : AbstractUserDialogs
     {

@@ -1,8 +1,6 @@
-﻿using System;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 
-
-namespace Samples
+namespace Samples.Pages
 {
 
     public class App : Application

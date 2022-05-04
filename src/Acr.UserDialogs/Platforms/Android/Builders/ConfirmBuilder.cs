@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using Android.App;
 using AlertDialog = Android.App.AlertDialog;
 #if ANDROIDX
@@ -9,7 +9,7 @@ using Android.Support.V7.App;
 using AppCompatAlertDialog = Android.Support.V7.App.AlertDialog;
 #endif
 
-namespace Acr.UserDialogs.Builders
+namespace Acr.UserDialogs.Extended.Builders
 {
     public class ConfirmBuilder : IAlertDialogBuilder<ConfirmConfig>
     {

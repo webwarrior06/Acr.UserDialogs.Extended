@@ -2,7 +2,7 @@
 using System.Windows.Input;
 
 
-namespace Acr.UserDialogs
+namespace Acr.UserDialogs.Extended
 {
 
     public class LoginViewModel

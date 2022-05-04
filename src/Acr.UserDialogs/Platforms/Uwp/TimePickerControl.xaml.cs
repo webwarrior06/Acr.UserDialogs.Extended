@@ -2,7 +2,7 @@
 using Windows.UI.Xaml.Controls;
 
 
-namespace Acr.UserDialogs
+namespace Acr.UserDialogs.Extended
 {
     public sealed partial class TimePickerControl
     {

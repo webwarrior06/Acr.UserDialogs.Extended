@@ -2,9 +2,10 @@
 using System.Threading.Tasks;
 using Windows.UI.Core;
 using Windows.ApplicationModel.Core;
+using Acr.UserDialogs.Extended;
 
 
-namespace Acr.UserDialogs
+namespace Acr.UserDialogs.Extended
 {
     public static partial class UserDialogs
     {

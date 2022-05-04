@@ -1,10 +1,10 @@
-using System;
-using Acr.UserDialogs.Infrastructure;
+﻿using System;
+using Acr.UserDialogs.Extended.Infrastructure;
 using AppKit;
 using CoreGraphics;
 using Foundation;
 
-namespace Acr.UserDialogs
+namespace Acr.UserDialogs.Extended
 {
     public class UserDialogsImpl : AbstractUserDialogs
     {
@@ -143,7 +143,7 @@ namespace Acr.UserDialogs
 
             // TODO: Implement input types validation
             if (config.InputType != InputType.Default || config.MaxLength != null)
-                Log.Warn("Acr.UserDialogs", "There is no validation of input types nor MaxLength on this implementation");
+                Log.Warn("Acr.UserDialogs.Extended", "There is no validation of input types nor MaxLength on this implementation");
 
             alert.AccessoryView = txtInput;
             alert.Layout();

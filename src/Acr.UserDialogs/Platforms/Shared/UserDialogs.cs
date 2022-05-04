@@ -1,7 +1,5 @@
 ﻿using System;
-
-
-namespace Acr.UserDialogs
+namespace Acr.UserDialogs.Extended.Platforms.Shared
 {
     public static partial class UserDialogs
     {
@@ -12,7 +10,7 @@ namespace Acr.UserDialogs
             get
             {
                 if (currentInstance == null)
-                    throw new ArgumentException("[Acr.UserDialogs] This is the bait library, not the platform library.  You must install the nuget package in your main executable/application project");
+                    throw new ArgumentException("[Acr.UserDialogs.Extended] This is the bait library, not the platform library.  You must install the nuget package in your main executable/application project");
 
                 return currentInstance;
             }

@@ -2,7 +2,7 @@
 using System.Windows.Input;
 
 
-namespace Acr.UserDialogs.Infrastructure
+namespace Acr.UserDialogs.Extended.Infrastructure
 {
     public class Command : ICommand
     {

@@ -1,8 +1,9 @@
 ﻿using System;
-using Acr.UserDialogs;
+using Acr.UserDialogs.Extended;
 using Android.App;
 using Android.Content.PM;
 using Android.OS;
+using Samples.Pages;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 
@@ -23,7 +24,6 @@ namespace Samples.Droid
         {
             base.OnCreate(bundle);
             Forms.Init(this, bundle);
-            FormsAppCompatActivity.ToolbarResource = Resource.Layout.toolbar;
             FormsAppCompatActivity.TabLayoutResource = Resource.Layout.tabs;
 
             UserDialogs.Init(this);

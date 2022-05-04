@@ -1,10 +1,8 @@
-﻿using System;
-using Acr.UserDialogs;
+﻿using Acr.UserDialogs.Extended.Platforms.Shared;
 using Samples.ViewModels;
 using Xamarin.Forms;
 
-
-namespace Samples
+namespace Samples.Pages
 {
     public partial class SpecificCasesPage : ContentPage
     {

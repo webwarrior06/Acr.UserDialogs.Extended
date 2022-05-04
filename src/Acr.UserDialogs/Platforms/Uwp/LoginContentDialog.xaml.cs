@@ -15,7 +15,7 @@ using Windows.UI.Xaml.Navigation;
 
 // The Content Dialog item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
-namespace Acr.UserDialogs {
+namespace Acr.UserDialogs.Extended {
     public sealed partial class LoginContentDialog : ContentDialog {
         public LoginContentDialog() {
             this.InitializeComponent();

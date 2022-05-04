@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using Acr.UserDialogs;
+using Acr.UserDialogs.Extended;
 
 
 namespace Samples.ViewModels

@@ -1,7 +1,6 @@
 ﻿using System;
 
-
-namespace Acr.UserDialogs
+namespace Acr.UserDialogs.Extended
 {
 
     public class ConfirmConfig : IStandardDialogConfig, IAndroidStyleDialogConfig

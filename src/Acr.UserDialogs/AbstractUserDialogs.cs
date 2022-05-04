@@ -2,8 +2,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-
-namespace Acr.UserDialogs
+namespace Acr.UserDialogs.Extended
 {
 
     public abstract class AbstractUserDialogs : IUserDialogs

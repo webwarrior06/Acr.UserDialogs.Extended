@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Linq;
 using Android.App;
 #if ANDROIDX
@@ -11,7 +11,7 @@ using AppCompatAlertDialog = Android.Support.V7.App.AlertDialog;
 using AlertDialog = Android.App.AlertDialog;
 
 
-namespace Acr.UserDialogs.Builders
+namespace Acr.UserDialogs.Extended.Builders
 {
     public class ActionSheetBuilder : IAlertDialogBuilder<ActionSheetConfig>
     {

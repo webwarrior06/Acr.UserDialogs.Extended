@@ -3,7 +3,7 @@ using System.Linq;
 using UIKit;
 
 
-namespace Acr.UserDialogs.Infrastructure
+namespace Acr.UserDialogs.Extended.Infrastructure
 {
     public static class Utils
     {

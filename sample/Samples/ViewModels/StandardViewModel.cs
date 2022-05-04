@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using Acr.UserDialogs;
+using Acr.UserDialogs.Extended;
 using Xamarin.Forms;
 
 
@@ -42,7 +42,7 @@ namespace Samples.ViewModels
                 new CommandViewModel
                 {
                     Text = "Action Sheet /w Message",
-                    Command = this.CreateActionSheetCommand(false, false, 6, "This is an example of using a message in Acr.UserDialogs actionsheets.  I needed a long message here!")
+                    Command = this.CreateActionSheetCommand(false, false, 6, "This is an example of using a message in Acr.UserDialogs.Extended actionsheets.  I needed a long message here!")
                 },
                 new CommandViewModel
                 {

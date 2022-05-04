@@ -1,4 +1,4 @@
-﻿namespace Acr.UserDialogs
+﻿namespace Acr.UserDialogs.Extended
 {
 	/// <summary>
 	/// This interface, which defines the ability to display simple text, is used internally.

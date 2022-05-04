@@ -8,7 +8,7 @@ using AndroidX.Core.Content;
 using Android.Support.V4.Content;
 #endif
 
-namespace Acr.UserDialogs.Infrastructure
+namespace Acr.UserDialogs.Extended.Infrastructure
 {
     public static class ImageLoader
     {

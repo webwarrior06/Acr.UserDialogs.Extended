@@ -2,7 +2,7 @@
 using ElmSharp;
 
 
-namespace Acr.UserDialogs
+namespace Acr.UserDialogs.Extended
 {
     public static partial class UserDialogs
     {
@@ -22,7 +22,7 @@ namespace Acr.UserDialogs
             get
             {
                 if (currentInstance == null)
-                    throw new ArgumentException("[Acr.UserDialogs] In Tizen, the window instance of your custom application must be passed by using UserDialogs.Init(Window).");
+                    throw new ArgumentException("[Acr.UserDialogs.Extended] In Tizen, the window instance of your custom application must be passed by using UserDialogs.Init(Window).");
 
                 return currentInstance;
             }

@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Drawing;
 
-
-namespace Acr.UserDialogs
+namespace Acr.UserDialogs.Extended
 {
     public class ToastAction
     {

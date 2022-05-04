@@ -1,6 +1,6 @@
 ﻿using AppKit;
 
-namespace Acr.UserDialogs
+namespace Acr.UserDialogs.Extended
 {
     public static class ViewsExtensions
     {

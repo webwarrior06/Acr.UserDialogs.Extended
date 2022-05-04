@@ -1,4 +1,4 @@
-﻿namespace Acr.UserDialogs
+﻿namespace Acr.UserDialogs.Extended
 {
     public enum iOSPickerStyle
     {

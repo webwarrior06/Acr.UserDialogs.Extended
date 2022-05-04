@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Acr.UserDialogs
+﻿namespace Acr.UserDialogs.Extended
 {
     public enum AutoCorrectionConfig
     {

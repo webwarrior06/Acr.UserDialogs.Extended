@@ -1,7 +1,6 @@
 ﻿using System;
 
-
-namespace Acr.UserDialogs.Infrastructure
+namespace Acr.UserDialogs.Extended.Infrastructure
 {
 
     public enum LogLevel

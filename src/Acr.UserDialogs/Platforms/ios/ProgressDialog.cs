@@ -5,7 +5,7 @@ using BigTed;
 using UIKit;
 
 
-namespace Acr.UserDialogs
+namespace Acr.UserDialogs.Extended
 {
 
     public class ProgressDialog : IProgressDialog

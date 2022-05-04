@@ -1,10 +1,7 @@
-﻿using System;
-using Acr.UserDialogs;
-using Samples.ViewModels;
+﻿using Samples.ViewModels;
 using Xamarin.Forms;
 
-
-namespace Samples
+namespace Samples.Pages
 {
     public partial class SettingsPage : ContentPage
     {

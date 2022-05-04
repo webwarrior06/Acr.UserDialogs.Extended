@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Windows.Input;
 using Windows.UI.Xaml;
-using Acr.UserDialogs.Infrastructure;
+using Acr.UserDialogs.Extended.Infrastructure;
 
 
-namespace Acr.UserDialogs
+namespace Acr.UserDialogs.Extended
 {
     public class ActionSheetOptionViewModel
     {

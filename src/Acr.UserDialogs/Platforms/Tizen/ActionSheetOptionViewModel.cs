@@ -3,7 +3,7 @@ using System;
 using System.Windows.Input;
 using Xamarin.Forms;
 
-namespace Acr.UserDialogs
+namespace Acr.UserDialogs.Extended
 {
 	public class ActionSheetOptionViewModel
 	{

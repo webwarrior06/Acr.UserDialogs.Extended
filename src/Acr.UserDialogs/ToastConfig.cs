@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Drawing;
 
-
-namespace Acr.UserDialogs
+namespace Acr.UserDialogs.Extended
 {
     public class ToastConfig
     {
@@ -30,11 +29,13 @@ namespace Acr.UserDialogs
 
         public string Message { get; set; }
         public Color? MessageTextColor { get; set; } = DefaultMessageTextColor;
+        public Color? ProgressColor { get; set; } = DefaultMessageTextColor;
         public Color? BackgroundColor { get; set; } = DefaultBackgroundColor;
         public ToastPosition? Position { get; set; } = DefaultPosition;
         public TimeSpan Duration { get; set; } = DefaultDuration;
         public ToastAction Action { get; set; }
         public string Icon { get; set; }
+        public bool ShowProgress { get; set; }
 
 
         public ToastConfig(string message)

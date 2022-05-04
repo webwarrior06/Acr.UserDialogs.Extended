@@ -9,7 +9,7 @@ namespace Samples.Uwp
         public MainPage()
         {
             this.InitializeComponent();
-            this.LoadApplication(new Samples.App());
+            this.LoadApplication(new Pages.App());
         }
     }
 }

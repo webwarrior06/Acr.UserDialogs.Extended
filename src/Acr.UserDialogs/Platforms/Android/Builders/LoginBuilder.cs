@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using Android.App;
 using Android.Text;
 using Android.Views;
@@ -13,7 +13,7 @@ using AppCompatAlertDialog = Android.Support.V7.App.AlertDialog;
 #endif
 
 
-namespace Acr.UserDialogs.Builders
+namespace Acr.UserDialogs.Extended.Builders
 {
     public class LoginBuilder : IAlertDialogBuilder<LoginConfig>
     {

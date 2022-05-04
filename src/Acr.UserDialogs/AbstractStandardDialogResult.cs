@@ -1,7 +1,4 @@
-﻿using System;
-
-
-namespace Acr.UserDialogs
+﻿namespace Acr.UserDialogs.Extended
 {
     public abstract class AbstractStandardDialogResult<T> : IStandardDialogResult<T>
     {

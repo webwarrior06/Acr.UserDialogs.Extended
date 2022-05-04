@@ -1,23 +1,33 @@
-using System;
-using Acr.UserDialogs.Builders;
-using Acr.UserDialogs.Fragments;
-using Acr.UserDialogs.Infrastructure;
+﻿using System;
+using System.Timers;
+using Acr.UserDialogs.Extended.Builders;
+using Acr.UserDialogs.Extended.Fragments;
+using Acr.UserDialogs.Extended.Infrastructure;
+using Android.Animation;
 using Android.App;
+using Android.Content;
 using Android.Text;
 using Android.Views;
 using Android.Widget;
 using Android.Text.Style;
+using Android.Util;
+using Android.Views.Animations;
 using AndroidHUD;
+using Google.Android.Material.Behavior;
+using Java.Interop;
+using Java.Lang;
+using String = System.String;
 #if ANDROIDX
 using AndroidX.AppCompat.App;
 using Google.Android.Material.Snackbar;
+
 #else
 using Android.Support.V7.App;
 using Android.Support.Design.Widget;
 #endif
 
 
-namespace Acr.UserDialogs
+namespace Acr.UserDialogs.Extended
 {
     public class UserDialogsImpl : AbstractUserDialogs
     {
@@ -31,7 +41,7 @@ namespace Acr.UserDialogs
         }
 
 
-#region Alert Dialogs
+        #region Alert Dialogs
 
         public override IDisposable Alert(AlertConfig config)
         {
@@ -107,9 +117,9 @@ namespace Acr.UserDialogs
             return this.Show(activity, () => TimePromptBuilder.Build(activity, config));
         }
 
-#endregion
+        #endregion
 
-#region Toasts
+        #region Toasts
 
         public override IDisposable Toast(ToastConfig cfg)
         {
@@ -120,7 +130,6 @@ namespace Acr.UserDialogs
             return this.ToastFallback(activity, cfg);
         }
 
-
         protected virtual IDisposable ToastAppCompat(AppCompatActivity activity, ToastConfig cfg)
         {
             Snackbar snackBar = null;
@@ -129,11 +138,15 @@ namespace Acr.UserDialogs
                 var view = activity.Window.DecorView.RootView.FindViewById(Android.Resource.Id.Content);
                 var msg = this.GetSnackbarText(cfg);
 
-                snackBar = Snackbar.Make(
-                    view,
-                    msg,
-                    (int)cfg.Duration.TotalMilliseconds
-                );
+                snackBar = Snackbar.Make(view, msg, (int) cfg.Duration.TotalMilliseconds);
+
+                LinearLayout progressView = null;
+
+                if (cfg.ShowProgress)
+                {
+                    progressView = HandleProgressBarCreation(activity, cfg, snackBar);
+                }
+
                 if (cfg.BackgroundColor != null)
                     snackBar.View.SetBackgroundColor(cfg.BackgroundColor.Value.ToNative());
 
@@ -148,6 +161,7 @@ namespace Acr.UserDialogs
                         snackBar.View.LayoutParameters = layoutParams;
                     }
                 }
+
                 if (cfg.Action != null)
                 {
                     snackBar.SetAction(cfg.Action.Text, x =>
@@ -161,6 +175,12 @@ namespace Acr.UserDialogs
                 }
 
                 snackBar.Show();
+
+
+                if (progressView != null)
+                {
+                    AnimateProgressBar(view, progressView, cfg);
+                }
             });
             return new DisposableAction(() =>
             {
@@ -169,6 +189,47 @@ namespace Acr.UserDialogs
             });
         }
 
+        private static void AnimateProgressBar(View? view, LinearLayout progressView ,ToastConfig cfg)
+        {
+            int parentWidth = ((View) view.Parent).MeasuredWidth;
+            ValueAnimator widthAnimator = ValueAnimator.OfInt(parentWidth, progressView.Width);
+            widthAnimator.SetDuration((int) cfg.Duration.TotalMilliseconds);
+            widthAnimator.SetInterpolator(new DecelerateInterpolator());
+            widthAnimator.Update += (sender, args) =>
+            {
+                progressView.LayoutParameters.Width = (int) args.Animation.AnimatedValue;
+                progressView.RequestLayout();
+            };
+
+            widthAnimator.Start();
+        }
+
+        private LinearLayout HandleProgressBarCreation(AppCompatActivity activity, ToastConfig cfg, Snackbar snackBar)
+        {
+            LinearLayout progressView;
+            var snackBarLayout = (Snackbar.SnackbarLayout) snackBar.View;
+
+            var heightInDp = DpToPx(activity, 3);
+
+            var param = new Snackbar.SnackbarLayout.LayoutParams(Snackbar.SnackbarLayout.LayoutParams.MatchParent, heightInDp)
+            {
+                Gravity = GravityFlags.Bottom | GravityFlags.Center,
+                BottomMargin = DpToPx(activity, 2)
+            };
+
+            progressView = new LinearLayout(activity) {LayoutParameters = param};
+
+            if (cfg.ProgressColor != null)
+                progressView.SetBackgroundColor(cfg.ProgressColor.Value.ToNative());
+
+            snackBarLayout.AddView(progressView);
+            return progressView;
+        }
+
+        private static int DpToPx(AppCompatActivity activity, int dp)
+        {
+            return Convert.ToInt32(TypedValue.ApplyDimension(ComplexUnitType.Dip, dp, activity.Resources.DisplayMetrics));
+        }
 
         protected virtual ISpanned GetSnackbarText(ToastConfig cfg)
         {
@@ -198,15 +259,16 @@ namespace Acr.UserDialogs
                     SpanTypes.ExclusiveExclusive
                 );
             }
+
             return sb;
         }
 
 
         protected virtual string ToHex(System.Drawing.Color color)
         {
-            var red = (int)(color.R * 255);
-            var green = (int)(color.G * 255);
-            var blue = (int)(color.B * 255);
+            var red = (int) (color.R * 255);
+            var green = (int) (color.G * 255);
+            var blue = (int) (color.B * 255);
             //var alpha = (int)(color.A * 255);
             //var hex = String.Format($"#{red:X2}{green:X2}{blue:X2}{alpha:X2}");
             var hex = String.Format($"#{red:X2}{green:X2}{blue:X2}");
@@ -240,9 +302,9 @@ namespace Acr.UserDialogs
             });
         }
 
-#endregion
+        #endregion
 
-#region Internals
+        #region Internals
 
         protected override IProgressDialog CreateDialogInstance(ProgressDialogConfig config)
         {
@@ -283,7 +345,7 @@ namespace Acr.UserDialogs
             TFragment frag = null;
             activity.SafeRunOnUi(() =>
             {
-                frag = (TFragment)Activator.CreateInstance(typeof(TFragment));
+                frag = (TFragment) Activator.CreateInstance(typeof(TFragment));
                 frag.Config = config;
                 frag.Show(activity.SupportFragmentManager, FragmentTag);
             });
@@ -292,6 +354,6 @@ namespace Acr.UserDialogs
             );
         }
 
-#endregion
+        #endregion
     }
 }

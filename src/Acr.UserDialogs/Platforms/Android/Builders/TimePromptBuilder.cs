@@ -1,11 +1,11 @@
-using System;
+﻿using System;
 using Android.App;
 using Android.Text.Format;
 using Android.Widget;
 using Java.Lang;
 
 
-namespace Acr.UserDialogs.Builders
+namespace Acr.UserDialogs.Extended.Builders
 {
     public static class TimePromptBuilder
     {

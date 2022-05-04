@@ -1,8 +1,8 @@
-using System;
+﻿using System;
 using AppKit;
 using CoreGraphics;
 
-namespace Acr.UserDialogs
+namespace Acr.UserDialogs.Extended
 {
     public class ProgressDialog : IProgressDialog
     {

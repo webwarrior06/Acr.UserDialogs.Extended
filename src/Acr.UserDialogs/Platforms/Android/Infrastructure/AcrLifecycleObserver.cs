@@ -4,7 +4,7 @@
 //using Android.Content;
 
 
-//namespace Acr.UserDialogs
+//namespace Acr.UserDialogs.Extended
 //{
 ////<package id = "Xamarin.Android.Arch.Core.Common" version="1.0.0" targetFramework="monoandroid80" />
 ////<package id = "Xamarin.Android.Arch.Lifecycle.Common" version="1.0.1" targetFramework="monoandroid80" />

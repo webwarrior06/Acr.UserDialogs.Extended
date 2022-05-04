@@ -2,7 +2,7 @@
 using AppKit;
 
 
-namespace Acr.UserDialogs
+namespace Acr.UserDialogs.Extended
 {
     public static partial class UserDialogs
     {

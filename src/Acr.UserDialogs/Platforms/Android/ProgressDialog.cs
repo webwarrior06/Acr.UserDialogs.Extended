@@ -1,10 +1,10 @@
-using System;
+﻿using System;
 using Android.App;
 using Android.Views;
 using AndroidHUD;
 
 
-namespace Acr.UserDialogs
+namespace Acr.UserDialogs.Extended
 {
     public class ProgressDialog : IProgressDialog
     {

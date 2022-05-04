@@ -5,10 +5,11 @@ using System.Windows.Input;
 using Windows.ApplicationModel.Core;
 using Windows.UI.Core;
 using Windows.UI.Xaml;
-using Acr.UserDialogs.Infrastructure;
+using Acr.UserDialogs.Extended.Infrastructure;
 using System.Threading.Tasks;
+using Acr.UserDialogs.Extended;
 
-namespace Acr.UserDialogs
+namespace Acr.UserDialogs.Extended
 {
     public class ProgressDialog : IProgressDialog, INotifyPropertyChanged
     {

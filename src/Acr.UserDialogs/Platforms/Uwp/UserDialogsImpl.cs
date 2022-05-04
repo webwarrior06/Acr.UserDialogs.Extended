@@ -10,11 +10,13 @@ using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
+using Acr.UserDialogs.Extended;
+using Acr.UserDialogs.Extended.Infrastructure;
 using Coding4Fun.Toolkit.Controls;
-using Acr.UserDialogs.Infrastructure;
+using Acr.UserDialogs.Extended.Infrastructure;
 
 
-namespace Acr.UserDialogs
+namespace Acr.UserDialogs.Extended
 {
     public class UserDialogsImpl : AbstractUserDialogs
     {

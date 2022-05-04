@@ -1,5 +1,5 @@
 ﻿using System;
-using Acr.UserDialogs;
+using Acr.UserDialogs.Extended;
 using Foundation;
 using UIKit;
 

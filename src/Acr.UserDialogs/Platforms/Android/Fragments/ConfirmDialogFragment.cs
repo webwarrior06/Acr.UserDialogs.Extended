@@ -1,11 +1,11 @@
-using System;
-using Acr.UserDialogs.Builders;
+﻿using System;
+using Acr.UserDialogs.Extended.Builders;
 using Android.App;
 using Android.Content;
 using Android.Views;
 
 
-namespace Acr.UserDialogs.Fragments
+namespace Acr.UserDialogs.Extended.Fragments
 {
     public class ConfirmAppCompatDialogFragment : AbstractAppCompatDialogFragment<ConfirmConfig>
     {

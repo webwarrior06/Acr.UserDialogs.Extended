@@ -1,9 +1,10 @@
 ﻿using System;
-using Acr.UserDialogs.Infrastructure;
+using Acr.UserDialogs.Extended;
+using Acr.UserDialogs.Extended.Infrastructure;
 using Android.App;
 
 
-namespace Acr.UserDialogs
+namespace Acr.UserDialogs.Extended
 {
     public static partial class UserDialogs
     {
@@ -39,7 +40,7 @@ namespace Acr.UserDialogs
             get
             {
                 if (currentInstance == null)
-                    throw new ArgumentException("[Acr.UserDialogs] In android, you must call UserDialogs.Init(Activity) from your first activity OR UserDialogs.Init(App) from your custom application OR provide a factory function to get the current top activity via UserDialogs.Init(() => supply top activity)");
+                    throw new ArgumentException("[Acr.UserDialogs.Extended] In android, you must call UserDialogs.Init(Activity) from your first activity OR UserDialogs.Init(App) from your custom application OR provide a factory function to get the current top activity via UserDialogs.Init(() => supply top activity)");
 
                 return currentInstance;
             }

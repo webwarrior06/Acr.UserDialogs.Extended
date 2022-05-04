@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using Android.App;
 #if ANDROIDX
 using AndroidX.AppCompat.App;
@@ -6,7 +6,7 @@ using AndroidX.AppCompat.App;
 using Android.Support.V7.App;
 #endif
 
-namespace Acr.UserDialogs.Builders
+namespace Acr.UserDialogs.Extended.Builders
 {
     public interface IAlertDialogBuilder<in TConfig>
     {

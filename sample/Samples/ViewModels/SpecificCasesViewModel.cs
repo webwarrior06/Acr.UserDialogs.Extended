@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using Acr.UserDialogs;
+using Acr.UserDialogs.Extended;
 using Xamarin.Forms;
 
 

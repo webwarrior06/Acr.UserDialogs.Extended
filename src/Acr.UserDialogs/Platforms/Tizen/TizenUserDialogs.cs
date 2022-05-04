@@ -9,7 +9,7 @@ using XLable = Xamarin.Forms.Label;
 using Tizen.Applications;
 
 
-namespace Acr.UserDialogs
+namespace Acr.UserDialogs.Extended
 {
 	public class TizenUserDialogs : AbstractUserDialogs
 	{

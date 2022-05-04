@@ -1,5 +1,5 @@
-using System;
-using Acr.UserDialogs.Infrastructure;
+﻿using System;
+using Acr.UserDialogs.Extended.Infrastructure;
 using Android.App;
 using Android.Content;
 using Android.Graphics;
@@ -14,7 +14,7 @@ using Google.Android.Material.BottomSheet;
 using Android.Support.Design.Widget;
 #endif
 
-namespace Acr.UserDialogs.Fragments
+namespace Acr.UserDialogs.Extended.Fragments
 {
     public class BottomSheetDialogFragment : AbstractAppCompatDialogFragment<ActionSheetConfig>
     {

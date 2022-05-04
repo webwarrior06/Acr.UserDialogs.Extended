@@ -1,10 +1,10 @@
-using System;
+﻿using System;
 using Android.App;
 using Android.Graphics;
-using Acr.UserDialogs.Infrastructure;
+using Acr.UserDialogs.Extended.Infrastructure;
 using Android.Content;
 
-namespace Acr.UserDialogs
+namespace Acr.UserDialogs.Extended
 {
     public static class Extensions
     {
