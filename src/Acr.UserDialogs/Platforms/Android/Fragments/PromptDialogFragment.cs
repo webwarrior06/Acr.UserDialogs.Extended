@@ -1,12 +1,12 @@
 ﻿using System;
-using Acr.UserDialogs.Extended.Builders;
+using   Acr.UserDialogs.Extended.Platforms.Android.Builders   ;
 using Android.App;
 using Android.Content;
 using Android.Views;
 using Android.Widget;
 
 
-namespace Acr.UserDialogs.Extended.Fragments
+namespace Acr.UserDialogs.Extended.Platforms.Android.Fragments
 {
     public class PromptAppCompatDialogFragment : AbstractAppCompatDialogFragment<PromptConfig>
     {

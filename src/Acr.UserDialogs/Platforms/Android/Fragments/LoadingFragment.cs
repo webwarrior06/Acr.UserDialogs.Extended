@@ -5,7 +5,7 @@
 //using AndroidHUD;
 
 
-//namespace Acr.UserDialogs.Extended.Fragments
+//namespace Acr.UserDialogs.Extended.Platforms.Android.Fragments
 //{
 //    public class LoadingFragment : AppCompatDialogFragment
 //    {

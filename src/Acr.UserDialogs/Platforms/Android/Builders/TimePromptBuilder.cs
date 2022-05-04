@@ -5,7 +5,7 @@ using Android.Widget;
 using Java.Lang;
 
 
-namespace Acr.UserDialogs.Extended.Builders
+namespace   Acr.UserDialogs.Extended.Platforms.Android.Builders   
 {
     public static class TimePromptBuilder
     {

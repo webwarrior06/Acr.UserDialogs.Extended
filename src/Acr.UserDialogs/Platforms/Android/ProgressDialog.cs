@@ -1,10 +1,11 @@
 ﻿using System;
+using Acr.UserDialogs.Extended.Infrastructure;
 using Android.App;
 using Android.Views;
 using AndroidHUD;
 
 
-namespace Acr.UserDialogs.Extended
+namespace Acr.UserDialogs.Extended.Platforms.Android
 {
     public class ProgressDialog : IProgressDialog
     {
@@ -78,7 +79,7 @@ namespace Acr.UserDialogs.Extended
             }
             catch(Exception exc)
             {
-                Infrastructure.Log.Error("Dismiss", $"Exception ({exc.GetType().FullName}) occured while dismissing dialog: {exc.Message}");
+                Log.Error("Dismiss", $"Exception ({exc.GetType().FullName}) occured while dismissing dialog: {exc.Message}");
             }
         }
 

@@ -4,7 +4,7 @@ using Android.Content;
 using Android.Text;
 
 
-namespace Acr.UserDialogs.Extended.Builders
+namespace   Acr.UserDialogs.Extended.Platforms.Android.Builders   
 {
     public static class DatePromptBuilder
     {

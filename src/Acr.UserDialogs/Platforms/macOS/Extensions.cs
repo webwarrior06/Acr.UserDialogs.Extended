@@ -2,7 +2,7 @@
 using AppKit;
 using Foundation;
 
-namespace Acr.UserDialogs.Extended
+namespace Acr.UserDialogs.Extended.Platforms.macOS
 {
     public static class Extensions
     {

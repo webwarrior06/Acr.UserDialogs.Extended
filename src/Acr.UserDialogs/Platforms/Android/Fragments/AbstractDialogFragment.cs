@@ -1,4 +1,5 @@
 ﻿using System;
+using Acr.UserDialogs.Extended.Platforms.Android.Fragments;
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -9,7 +10,7 @@ using AndroidX.AppCompat.App;
 using Android.Support.V7.App;
 #endif
 
-namespace Acr.UserDialogs.Extended.Fragments
+namespace Acr.UserDialogs.Extended.Platforms.Android.Fragments
 {
     public abstract class AbstractAppCompatDialogFragment<T> : AppCompatDialogFragment where T : class
     {

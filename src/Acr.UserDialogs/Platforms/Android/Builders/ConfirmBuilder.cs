@@ -9,7 +9,7 @@ using Android.Support.V7.App;
 using AppCompatAlertDialog = Android.Support.V7.App.AlertDialog;
 #endif
 
-namespace Acr.UserDialogs.Extended.Builders
+namespace   Acr.UserDialogs.Extended.Platforms.Android.Builders   
 {
     public class ConfirmBuilder : IAlertDialogBuilder<ConfirmConfig>
     {

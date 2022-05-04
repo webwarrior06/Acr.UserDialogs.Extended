@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Timers;
-using Acr.UserDialogs.Extended.Builders;
-using Acr.UserDialogs.Extended.Fragments;
+using Acr.UserDialogs.Extended;
+using   Acr.UserDialogs.Extended.Platforms.Android.Builders   ;
+using Acr.UserDialogs.Extended.Platforms.Android.Fragments;
 using Acr.UserDialogs.Extended.Infrastructure;
+using Acr.UserDialogs.Extended.Platforms.Android;
+using Acr.UserDialogs.Extended.Platforms.Android.Infrastructure;
 using Android.Animation;
 using Android.App;
 using Android.Content;
@@ -59,7 +62,7 @@ namespace Acr.UserDialogs.Extended
             if (activity is AppCompatActivity act)
             {
                 if (config.UseBottomSheet)
-                    return this.ShowDialog<Fragments.BottomSheetDialogFragment, ActionSheetConfig>(act, config);
+                    return this.ShowDialog<BottomSheetDialogFragment, ActionSheetConfig>(act, config);
 
                 return this.ShowDialog<ActionSheetAppCompatDialogFragment, ActionSheetConfig>(act, config);
             }
@@ -309,7 +312,7 @@ namespace Acr.UserDialogs.Extended
         protected override IProgressDialog CreateDialogInstance(ProgressDialogConfig config)
         {
             var activity = this.TopActivityFunc();
-            var dialog = new ProgressDialog(config, activity);
+            var dialog = new Acr.UserDialogs.Extended.Platforms.Android.ProgressDialog(config, activity);
 
 
             //if (activity != null)

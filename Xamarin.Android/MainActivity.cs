@@ -1,17 +1,14 @@
 ﻿using System;
 using System.Drawing;
 using Acr.UserDialogs.Extended;
+using Acr.UserDialogs.Extended.Platforms.Android;
 using Android.App;
 using Android.OS;
-using Android.Runtime;
 using Android.Views;
 using AndroidX.AppCompat.Widget;
 using AndroidX.AppCompat.App;
 using AndroidX.CoordinatorLayout.Widget;
-using AndroidX.CustomView.Widget;
-using Google.Android.Material.Behavior;
 using Google.Android.Material.FloatingActionButton;
-using Google.Android.Material.Snackbar;
 
 namespace Xamarin.Android
 {
@@ -31,8 +28,6 @@ namespace Xamarin.Android
             fab.Click += FabOnClick;
 
             UserDialogs.Init(this);
-            
-            
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)
@@ -57,12 +52,18 @@ namespace Xamarin.Android
             // UserDialogs.Instance.Toast("dsds");
 
             var view = FindViewById<CoordinatorLayout>(Resource.Id.main);
-            var view2 = (ViewGroup)Window.DecorView.RootView.FindViewById(global::Android.Resource.Id.Content);
+            var view2 = (ViewGroup) Window.DecorView.RootView.FindViewById(global::Android.Resource.Id.Content);
 
             var aa = view2.GetChildAt(0);
 
-            UserDialogs.Instance.Toast(new ToastConfig("message"){Duration = TimeSpan.FromMilliseconds(4000), Position = ToastPosition.Top,ShowProgress = true, ProgressColor = Color.Aquamarine});
-
+            UserDialogs.Instance.Toast(new ToastConfig("message")
+            {
+                Duration = TimeSpan.FromMilliseconds(4000),
+                Position = ToastPosition.Top,
+                ShowProgress = true,
+                Action = new ToastAction() {Text = "dsds"},
+                ProgressColor = Color.Aquamarine
+            });
         }
     }
 }

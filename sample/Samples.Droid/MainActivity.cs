@@ -1,5 +1,6 @@
 ﻿using System;
 using Acr.UserDialogs.Extended;
+using Acr.UserDialogs.Extended.Platforms.Android;
 using Android.App;
 using Android.Content.PM;
 using Android.OS;

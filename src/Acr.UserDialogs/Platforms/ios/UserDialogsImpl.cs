@@ -5,11 +5,10 @@ using Acr.UserDialogs.Extended;
 using UIKit;
 using CoreGraphics;
 using Foundation;
-using TTG;
 using Acr.UserDialogs.Extended.Infrastructure;
 
 
-namespace Acr.UserDialogs.Extended
+namespace Acr.UserDialogs.Extended.Platforms.ios
 {
     public class UserDialogsImpl : AbstractUserDialogs
     {

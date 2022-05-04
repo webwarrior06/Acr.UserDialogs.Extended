@@ -1,10 +1,9 @@
 ﻿using System;
-using Acr.UserDialogs.Extended;
-using Acr.UserDialogs.Extended.Infrastructure;
+using Acr.UserDialogs.Extended.Platforms.Android.Infrastructure;
 using Android.App;
 
 
-namespace Acr.UserDialogs.Extended
+namespace Acr.UserDialogs.Extended.Platforms.Android
 {
     public static partial class UserDialogs
     {

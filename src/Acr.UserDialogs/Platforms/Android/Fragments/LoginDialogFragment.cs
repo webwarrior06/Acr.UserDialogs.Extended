@@ -1,9 +1,9 @@
 ﻿using System;
-using Acr.UserDialogs.Extended.Builders;
+using   Acr.UserDialogs.Extended.Platforms.Android.Builders   ;
 using Android.App;
 
 
-namespace Acr.UserDialogs.Extended.Fragments
+namespace Acr.UserDialogs.Extended.Platforms.Android.Fragments
 {
     public class LoginAppCompatDialogFragment : AbstractAppCompatDialogFragment<LoginConfig>
     {

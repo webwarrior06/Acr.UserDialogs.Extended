@@ -2,7 +2,7 @@
 using AppKit;
 
 
-namespace Acr.UserDialogs.Extended
+namespace Acr.UserDialogs.Extended.Platforms.macOS
 {
     public static partial class UserDialogs
     {

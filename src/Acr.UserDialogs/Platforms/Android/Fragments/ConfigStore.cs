@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Android.OS;
 
 
-namespace Acr.UserDialogs.Extended.Fragments
+namespace Acr.UserDialogs.Extended.Platforms.Android.Fragments
 {
     public class ConfigStore
     {

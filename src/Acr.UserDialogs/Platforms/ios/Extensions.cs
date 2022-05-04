@@ -1,10 +1,11 @@
 ﻿using System;
+using Acr.UserDialogs.Extended;
 using Foundation;
 using UIKit;
 using Acr.UserDialogs.Extended.Infrastructure;
 
 
-namespace Acr.UserDialogs.Extended
+namespace Acr.UserDialogs.Extended.Platforms.ios
 {
     public static class Extensions
     {

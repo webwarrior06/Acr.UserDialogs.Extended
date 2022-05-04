@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Linq;
-using Acr.UserDialogs.Extended.Infrastructure;
+using Acr.UserDialogs.Extended.Platforms.Android.Infrastructure;
 using Android.Content;
 using Android.Views;
 using Android.Widget;
 
 
-namespace Acr.UserDialogs.Extended.Builders
+namespace   Acr.UserDialogs.Extended
 {
     public class ActionSheetListAdapter : ArrayAdapter<ActionSheetOption>
     {

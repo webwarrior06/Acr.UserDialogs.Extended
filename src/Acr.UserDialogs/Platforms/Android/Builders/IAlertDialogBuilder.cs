@@ -6,7 +6,7 @@ using AndroidX.AppCompat.App;
 using Android.Support.V7.App;
 #endif
 
-namespace Acr.UserDialogs.Extended.Builders
+namespace   Acr.UserDialogs.Extended.Platforms.Android.Builders   
 {
     public interface IAlertDialogBuilder<in TConfig>
     {

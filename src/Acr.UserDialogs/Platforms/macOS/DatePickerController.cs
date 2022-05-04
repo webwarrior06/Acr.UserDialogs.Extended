@@ -3,7 +3,7 @@ using Acr.UserDialogs.Extended;
 using AppKit;
 using Foundation;
 
-namespace Acr.UserDialogs.Extended
+namespace Acr.UserDialogs.Extended.Platforms.macOS
 {
     public class DatePickerController : NSViewController
     {

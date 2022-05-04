@@ -1,11 +1,11 @@
 ﻿using System;
-using Acr.UserDialogs.Extended.Builders;
+using   Acr.UserDialogs.Extended.Platforms.Android.Builders   ;
 using Android.App;
 using Android.Content;
 using Android.Views;
 
 
-namespace Acr.UserDialogs.Extended.Fragments
+namespace Acr.UserDialogs.Extended.Platforms.Android.Fragments
 {
     public class DateAppCompatDialogFragment : AbstractAppCompatDialogFragment<DatePromptConfig>
     {

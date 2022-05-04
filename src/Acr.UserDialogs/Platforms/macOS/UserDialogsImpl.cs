@@ -4,7 +4,7 @@ using AppKit;
 using CoreGraphics;
 using Foundation;
 
-namespace Acr.UserDialogs.Extended
+namespace Acr.UserDialogs.Extended.Platforms.macOS
 {
     public class UserDialogsImpl : AbstractUserDialogs
     {

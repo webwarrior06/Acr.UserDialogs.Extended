@@ -4,7 +4,7 @@ using UIKit;
 
 
 
-namespace TTG
+namespace Acr.UserDialogs.Extended.Platforms.ios
 {
     public enum TTGSnackbarAnimationType
     {

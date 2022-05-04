@@ -2,7 +2,7 @@
 using AppKit;
 using CoreGraphics;
 
-namespace Acr.UserDialogs.Extended
+namespace Acr.UserDialogs.Extended.Platforms.macOS
 {
     public class ProgressDialog : IProgressDialog
     {
