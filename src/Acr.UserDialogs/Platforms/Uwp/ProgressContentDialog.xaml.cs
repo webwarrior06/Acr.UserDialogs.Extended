@@ -2,7 +2,7 @@
 using Windows.UI.Xaml.Controls;
 
 
-namespace Acr.UserDialogs.Extended
+namespace Acr.UserDialogs.Extended.Platforms.Uwp
 {
 
     public sealed partial class ProgressContentDialog : ContentDialog

@@ -8,8 +8,9 @@ using Windows.UI.Xaml;
 using Acr.UserDialogs.Extended.Infrastructure;
 using System.Threading.Tasks;
 using Acr.UserDialogs.Extended;
+using Acr.UserDialogs.Extended.Platforms.Uwp;
 
-namespace Acr.UserDialogs.Extended
+namespace Acr.UserDialogs.Extended.Platforms.Uwp
 {
     public class ProgressDialog : IProgressDialog, INotifyPropertyChanged
     {

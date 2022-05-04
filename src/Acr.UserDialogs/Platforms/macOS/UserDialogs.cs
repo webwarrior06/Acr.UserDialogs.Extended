@@ -1,8 +1,9 @@
 ﻿using System;
+using Acr.UserDialogs.Extended.Platforms.macOS;
 using AppKit;
 
 
-namespace Acr.UserDialogs.Extended.Platforms.macOS
+namespace Acr.UserDialogs.Extended
 {
     public static partial class UserDialogs
     {

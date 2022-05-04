@@ -1,4 +1,4 @@
-﻿using Acr.UserDialogs.Extended.Platforms.Shared;
+﻿using Acr.UserDialogs.Extended;
 using Samples.ViewModels;
 using Xamarin.Forms;
 

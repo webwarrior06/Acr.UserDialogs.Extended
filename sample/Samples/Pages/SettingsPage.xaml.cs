@@ -1,4 +1,5 @@
-﻿using Samples.ViewModels;
+﻿using Acr.UserDialogs.Extended;
+using Samples.ViewModels;
 using Xamarin.Forms;
 
 namespace Samples.Pages

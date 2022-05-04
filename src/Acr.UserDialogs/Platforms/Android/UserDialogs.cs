@@ -3,7 +3,7 @@ using Acr.UserDialogs.Extended.Platforms.Android.Infrastructure;
 using Android.App;
 
 
-namespace Acr.UserDialogs.Extended.Platforms.Android
+namespace Acr.UserDialogs.Extended
 {
     public static partial class UserDialogs
     {

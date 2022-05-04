@@ -14,6 +14,7 @@ using Acr.UserDialogs.Extended;
 using Acr.UserDialogs.Extended.Infrastructure;
 using Coding4Fun.Toolkit.Controls;
 using Acr.UserDialogs.Extended.Infrastructure;
+using Acr.UserDialogs.Extended.Platforms.Uwp;
 
 
 namespace Acr.UserDialogs.Extended
